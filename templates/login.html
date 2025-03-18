@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirish va Ro'yxatdan O'tish</title>
+    <link rel="stylesheet" href="/static/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-tabs">
+            <button class="tab-btn active" onclick="showForm('signin')">Kirish</button>
+            <button class="tab-btn" onclick="showForm('signup')">Ro'yxatdan o'tish</button>
+        </div>
+        
+        <div class="form-content">
+            <!-- Sign In Form -->
+            <form class="form active" id="signin-form" novalidate>
+                <div class="form-group">
+                    <label for="signin-login">Login yoki Email</label>
+                    <input type="text" id="signin-login" class="form-control" placeholder="Login yoki email kiriting" required>
+                    <div class="error-message" id="signin-login-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signin-password">Parol</label>
+                    <input type="password" id="signin-password" class="form-control" placeholder="Parolingizni kiriting" required>
+                    <div class="error-message" id="signin-password-error"></div>
+                </div>
+                
+                <a href="#" class="forgot-link">Parol yoki loginni unutdingizmi?</a>
+                
+                <button type="submit" class="btn">Kirish</button>
+            </form>
+            
+            <!-- Sign Up Form -->
+            <form class="form" id="signup-form" novalidate>
+                <div class="form-group">
+                    <label for="signup-phone">Telefon raqam</label>
+                    <input type="tel" id="signup-phone" class="form-control" placeholder="+998 XX XXX XX XX" pattern="^\+998[0-9]{9}$" required>
+                    <div class="error-message" id="signup-phone-error"></div>
+                    <small class="form-hint">Format: +998XXXXXXXXX</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" class="form-control" placeholder="Email manzilingiz" required>
+                    <div class="error-message" id="signup-email-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-login">Login</label>
+                    <input type="text" id="signup-login" class="form-control" placeholder="Login kiriting" minlength="4" required>
+                    <div class="error-message" id="signup-login-error"></div>
+                    <small class="form-hint">Kamida 4 ta belgi</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-password">Yangi parol</label>
+                    <input type="password" id="signup-password" class="form-control" placeholder="Yangi parol kiriting" required>
+                    <div class="error-message" id="signup-password-error"></div>
+                    <small class="form-hint">Kamida 8 ta belgi, 1 ta katta harf, 1 ta son va 1 ta maxsus belgi</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-confirm">Parolni tasdiqlang</label>
+                    <input type="password" id="signup-confirm" class="form-control" placeholder="Parolni qayta kiriting" required>
+                    <div class="error-message" id="signup-confirm-error"></div>
+                </div>
+                
+                <div class="password-strength" id="password-strength">
+                    <div class="strength-label">Parol mustahkamligi:</div>
+                    <div class="strength-meter">
+                        <div class="strength-bar" id="strength-bar"></div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn">Ro'yxatdan o'tish</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/static/login.js"></script>
+</body>
+</html>
