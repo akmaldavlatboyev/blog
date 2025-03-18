@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akmal's Blog</title>
+    <link rel="stylesheet" href="/static/home.css">
+    <link rel="stylesheet" href="/static/index.css">
+
+</head>
+<body>
+     <!-- Header -->
+
+    <!-- Header -->
+    <header class="container">
+        <div class="header-left">
+            <!-- User account icon -->
+            <div class="user-account">
+                <button class="user-icon" id="userAccountBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+            </div>
+            <a class="homelink" href="/">Akmal's Blog</a>
+        </div>
+        
+        <div class="nav-links">
+            <a href="#">Projects</a>
+            <a href="{{url_for('about')}}">About</a>
+            <a href="{{url_for ('blog') }}">Blog</a>
+            <a href="{{url_for('logIn')}}">Log In</a>
+            <a href="https://t.me/itechblog_uz">Channel</a>
+        </div>
+        
+        <!-- Burger menu for mobile -->
+        <div class="burger-menu">
+            <div class="burger-icon" id="burgerIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- User Sidebar -->
+    <div class="user-sidebar" id="userSidebar">
+        <div class="sidebar-header">
+            <h3>Foydalanuvchi paneli</h3>
+            <button class="close-sidebar" id="closeSidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14M5 12h14"></path>
+                        </svg>
+                        Maqola qo'shish
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 3a2.85 2.85 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                        </svg>
+                        Maqolani tahrirlash
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 6h18M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                        </svg>
+                        Maqolani o'chirish
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5z"></path>
+                            <path d="M8 7h6"></path>
+                            <path d="M8 11h8"></path>
+                            <path d="M8 15h6"></path>
+                        </svg>
+                        Maqolalarim
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        Sozlamalar
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <button class="close-mobile-nav" id="closeMobileNav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-nav-content">
+            <a href="#">Projects</a>
+            <a href="{{url_for('about')}}">About</a>
+            <a href="{{url_for ('blog') }}">Blog</a>
+            <a href="{{url_for('logIn')}}">Log In</a>
+            <a href="https://t.me/itechblog_uz">Channel</a>
+        </div>
+    </div>
+
+    <!-- Overlay for sidebar and mobile nav -->
+    <div class="overlay" id="overlay"></div>
+    <!-- Blog Section -->
+    <section class="blog-section container">
+        <h1 class="blog-title">BLOG</h1>
+
+        <div class="blog-container">
+            <!-- Blog posts -->
+            <div class="blog-posts">
+                {% for year_data in blog_posts %}
+                    <div class="year-group">
+                        <h2 class="year">{{ year_data.year }}</h2>
+                        
+                        {% for month_data in year_data.months %}
+                            <div class="month-group">
+                                <h3 class="month">{{ month_data.month }}</h3>
+                                {% for post in month_data.posts %}
+                                    <article class="blog-post">
+                                        <time>{{ post.date }}</time>
+                                        <h4 class="post-title">
+                                            <a href="{{ url_for('article', slug=post.slug) }}">{{ post.title }}</a>
+
+                                        </h4>
+                                        <div class="author">
+                                            <span class="author-name">{{ post.author }}</span>
+                                        </div>
+                                    </article>
+                                {% endfor %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="blog-sidebar">
+                <div class="subscribe-box">
+                    <h3>Obuna Bo'ling</h3>
+                    <p>
+                        Yangi maqola
+                        <a href="https://t.me/itechblog_uz" class="telegram-link">@itechblog_uz</a> 
+                        telegram kanalimda topishingiz mumkin.
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <script src="/static/script.js">
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Blog API",
+    "description": "Blog postlarini boshqarish uchun API",
+    "version": "1.0"
+  },
+  "host": "127.0.0.1:4200",
+  "schemes": ["http"],
+  "paths": {
+    "/add_post": {
+      "post": {
+        "summary": "Yangi blog posti qo‘shish",
+        "description": "Blog postini qo‘shish uchun ushbu endpoint ishlatiladi.",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "year": { "type": "integer", "example": 2024 },
+                "month": { "type": "string", "example": "August" },
+                "date": { "type": "string", "example": "28 August, 2024" },
+                "title": { "type": "string", "example": "Mening yangi blog maqolam" },
+                "author": { "type": "string", "example": "Akmal" },
+                "url": { "type": "string", "example": "https://akmalsblog.uz/my-post" },
+                "content": { "type": "string", "example": "Bu maqolaning to‘liq matni shu yerda yoziladi..." }
+              },
+              "required": ["year", "month", "date", "title", "author", "url", "content"]
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Post muvaffaqiyatli qo‘shildi",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": { "type": "string" },
+                "post": { "$ref": "#/definitions/Post" }
+              }
+            }
+          },
+          "400": {
+            "description": "Xatolik: noto‘g‘ri ma’lumotlar yuborildi",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "error": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Post": {
+      "type": "object",
+      "properties": {
+        "date": { "type": "string" },
+        "title": { "type": "string" },
+        "author": { "type": "string" },
+        "url": { "type": "string" },
+        "slug": { "type": "string" },
+        "content": { "type": "string" }
+      }
+    }
+  }
+}

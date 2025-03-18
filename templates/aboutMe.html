@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mening Dasturlashdagi Safarim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/aboutMe.css">
+    <link rel="stylesheet" href="/static/home.css">
+    <link rel="stylesheet" href="/static/index.css">
+
+</head>
+<body>
+      <!-- Header -->
+
+    <!-- Header -->
+    <header class="container">
+        <div class="header-left">
+            <!-- User account icon -->
+            <div class="user-account">
+                <button class="user-icon" id="userAccountBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+            </div>
+            <a class="homelink" href="/">Akmal's Blog</a>
+        </div>
+        
+        <div class="nav-links">
+            <a href="#">Projects</a>
+            <a href="{{url_for('about')}}">About</a>
+            <a href="{{url_for ('blog') }}">Blog</a>
+            <a href="{{url_for('logIn')}}">Log In</a>
+            <a href="https://t.me/itechblog_uz">Channel</a>
+        </div>
+        
+        <!-- Burger menu for mobile -->
+        <div class="burger-menu">
+            <div class="burger-icon" id="burgerIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- User Sidebar -->
+    <div class="user-sidebar" id="userSidebar">
+        <div class="sidebar-header">
+            <h3>Foydalanuvchi paneli</h3>
+            <button class="close-sidebar" id="closeSidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14M5 12h14"></path>
+                        </svg>
+                        Maqola qo'shish
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 3a2.85 2.85 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                        </svg>
+                        Maqolani tahrirlash
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 6h18M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                        </svg>
+                        Maqolani o'chirish
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5z"></path>
+                            <path d="M8 7h6"></path>
+                            <path d="M8 11h8"></path>
+                            <path d="M8 15h6"></path>
+                        </svg>
+                        Maqolalarim
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        Sozlamalar
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <button class="close-mobile-nav" id="closeMobileNav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-nav-content">
+            <a href="#">Projects</a>
+            <a href="{{url_for('about')}}">About</a>
+            <a href="{{url_for ('blog') }}">Blog</a>
+            <a href="{{url_for('logIn')}}">Log In</a>
+            <a href="https://t.me/itechblog_uz">Channel</a>
+        </div>
+    </div>
+
+    <!-- Overlay for sidebar and mobile nav -->
+    <div class="overlay" id="overlay"></div>
+
+    <article class="article">
+        <h1>Mening Dasturlashdagi Safarim: Muvaffaqiyatsizliklar va Yangi Imkoniyatlar</h1>
+        
+        <p class="intro">
+            Dasturlashga bo'lgan qiziqishim juda katta edi, lekin bu yo'lda birinchi qadamimni tashlash oson bo'lmadi. Boshlanishida darrov kod yozib, saytlar yaratib ketmaganman. Avval <span class="highlight">Xorazmdagi Data Ta'lim Stansiyasining Foundation kursiga</span> qatnashdim. Bu kursda <span class="highlight">oddiy HTML, CSS va JavaScript DOM</span> bilan tanishdim, shuningdek, <span class="highlight">C dasturlash tilining boshlang'ich darajasini</span> o'rgandim. Kursni qiynalib bo'lsa-da tugatdim, lekin oldinda yanada katta sinovlar bor edi.
+        </p>
+        
+        <h2>Moliyaviy Muammolar va Ishtiyoqning So'nishi</h2>
+        <p>
+            Foundation kursini tamomlaganimdan so'ng <span class="highlight">6 oy davomida moliyaviy sabablarga ko'ra asosiy mutaxassislik kurslariga qatnasha olmadim</span>. Bu vaqt mobaynida dasturlashga bo'lgan ishtiyoqim asta-sekin so'na boshladi. Aslida, bilim olish istagi bor edi, lekin <span class="highlight">muntazam o'rganish va amaliyot bo'lmagani sababli motivatsiyam pasaydi</span>.
+        </p>
+        
+        <h2>Najot Ta'lim va Birinchi Jiddiy Xatolarim</h2>
+        <p>
+            Oradan ko'p vaqt o'tmay <span class="highlight">Najot Ta'lim Xorazm filialining ochilgani</span> haqidagi xabarni eshitdim. Bu men uchun yana bir imkoniyat edi. Shunday qilib, <span class="highlight">Node.js backend kursiga yozildim</span> va o'qishni boshladim.
+        </p>
+        <ul>
+            <li><strong>1-oy:</strong> HTML va CSSni to'liq o'rgandim.</li>
+            <li><strong>2-oy:</strong> JavaScript bo'yicha chuqurroq o'qish jarayoni boshlandi.</li>
+        </ul>
+        <p>
+            Ammo safarim uzoqqa bormadi. <span class="highlight">2-oyning ichki imtihonidan yiqildim</span>. Bunga <span class="highlight">asosiy sabab – dangasalik</span> edi. <span class="highlight">Berilgan topshiriqlarni o'zim bajarmasdan, AI yordamida hal qilishga urindim</span>, natijada <span class="highlight">o'zimning fikrlash qobiliyatimni susaytirdim</span>. Imtihonga kelganda esa kodni tushunmagan holda qoldim. Albatta, yana davom etishim mumkin edi, lekin bu safar oxirigacha yetib borishga ko'zim yetmadi. O'sha paytda o'zimga ishonchim pasaygan, bu sohada davom etishim to'g'risida shubhalana boshlagan edim.
+        </p>
+        
+        <h2>Uchinchi Imkoniyat: Unicorn 3.0 va PDP Universiteti</h2>
+        <p>
+            Bu bilan ham to'xtab qolmadim. Kunlarning birida <span class="highlight">do'stim "Texnoplov" blogining storisini</span> yuborib qoldi. Unda <span class="highlight">PDP universitetining Unicorn 3.0 loyihasi</span> haqida ma'lumot bor edi. Qiziqish bilan o'rganib chiqdim va bu men uchun yana bir imkoniyat ekanligini tushundim. <span class="highlight">Shu loyiha orqali universitetga grant asosida o'qishga qabul qilindim</span>.
+        </p>
+        <p>
+            Endi esa <span class="highlight">PDP universitetida BTEC tizimida tahsil olib kelmoqdaman</span>. Nihoyat, bu safar hammasi o'xshadi! Endi <span class="highlight">bilim olishga, amaliy loyihalar qilishga va o'z ustimda ishlashga jiddiy yondashyapman</span>. Oldingi xatolarimdan saboq oldim:
+        </p>
+        <ul class="checklist">
+            <li><span class="checkmark"></span> Berilgan vazifalarni o'zim bajarishni boshladim</li>
+            <li><span class="checkmark"></span> Sun'iy intellekt vositalaridan yordam sifatida foydalanish, lekin to'liq bog'lanib qolmaslikka o'rgandim</li>
+            <li><span class="checkmark"></span> Muntazam ravishda mashq qilish va tajribamni oshirish</li>
+        </ul>
+        
+        <div class="conclusion">
+            <h2>Xulosa</h2>
+            <p>
+                Muvaffaqiyatsizliklar va qiyinchiliklar insonni to'xtatishi mumkin, lekin men bunga imkon bermadim. Bu yo'lda <span class="highlight">moliyaviy muammolar, ishtiyoqning pasayishi, dangasalik va xatolar</span> bilan yuzlashdim. Lekin har safar o'zimni qayta motivatsiya qilib, yangi imkoniyatlardan foydalanishga harakat qildim. Bugun esa dasturchilik bo'yicha <span class="highlight">kuchliroq maqsadlar qo'yganman</span> va oldinga harakat qilishda davom etyapman.
+            </p>
+        </div>
+        
+        <p class="inspiration">
+            Agar siz ham shubhalarga duch kelsangiz yoki muvaffaqiyatsizlikdan qo'rqsangiz – esda tuting, har doim yangi imkoniyatlar bor! <span class="emoji">🌟🚀</span>
+        </p>
+    </article>
+
+    <div class="theme-toggle">
+        <button id="theme-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
