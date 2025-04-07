@@ -5,7 +5,7 @@
     "description": "Blog postlarini boshqarish uchun API",
     "version": "1.0"
   },
-  "host": "127.0.0.1:4200",
+  "host": "127.0.0.1:8000",
   "schemes": ["http"],
   "paths": {
     "/add_post": {
