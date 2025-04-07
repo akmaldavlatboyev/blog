@@ -73,6 +73,10 @@ def article(slug):
 
 @app.route('/about')
 def about():
+    return render_template('about.html')
+@app.route('/aboutMe')
+
+def aboutMe():
     return render_template('aboutMe.html')
 
 @app.route("/jsonblog")

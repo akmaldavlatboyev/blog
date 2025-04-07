@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayt Haqida | Akmal's Blog</title>
+    <link rel="stylesheet" href="/static/about.css">
+    <link rel="stylesheet" href="/static/home.css">
+
+</head>
+<body>
+    <!-- Aylanuvchi banner -->
+    <div class="scrolling-banner">
+        <div class="scrolling-text">
+          Sayt test rejimida ishlayapti 🚧 Sayt test rejimida ishlayapti 🚧 Sayt test rejimida ishlayapti 🚧
+        </div>
+    </div>
+      
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="header-left">
+                <!-- User account icon -->
+                <div class="user-account">
+                    <button class="user-icon" id="userAccountBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </button>
+                </div>
+                <a class="homelink" href="/">Akmal's Blog</a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#">Projects</a>
+                <a href="/about" class="active">About</a>
+                <a href="/blog">Blog</a>
+                <a href="/login">Log In</a>
+                <a href="https://t.me/itechblog_uz">Channel</a>
+            </div>
+            
+            <!-- Burger menu for mobile -->
+            <div class="burger-menu">
+                <div class="burger-icon" id="burgerIcon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- User Sidebar -->
+    <div class="user-sidebar" id="userSidebar">
+        <div class="sidebar-header">
+            <h3>Foydalanuvchi paneli</h3>
+            <button class="close-sidebar" id="closeSidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14M5 12h14"></path>
+                        </svg>
+                        Maqola qo'shish
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 3a2.85 2.85 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                        </svg>
+                        Maqolani tahrirlash
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 6h18M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                        </svg>
+                        Maqolani o'chirish
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5z"></path>
+                            <path d="M8 7h6"></path>
+                            <path d="M8 11h8"></path>
+                            <path d="M8 15h6"></path>
+                        </svg>
+                        Maqolalarim
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        Sozlamalar
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <button class="close-mobile-nav" id="closeMobileNav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-nav-content">
+            <a href="#">Projects</a>
+            <a href="/about" class="active">About</a>
+            <a href="/blog">Blog</a>
+            <a href="/login">Log In</a>
+            <a href="https://t.me/itechblog_uz">Channel</a>
+        </div>
+    </div>
+
+    <!-- Overlay for sidebar and mobile nav -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="about-header">
+                <h1>Sayt Haqida</h1>
+                <p class="about-description">Akmal's Blog - bu IT sohasidagi maqolalar, kitoblar va boshqa foydali kontentlarni ulashish uchun yaratilgan platforma.</p>
+            </div>
+
+            <!-- About Section -->
+            <section class="about-section">
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Akmal's Blog">
+                </div>
+                <div class="about-content">
+                    <h2>Bizning Maqsadimiz</h2>
+                    <p>Akmal's Blog platformasi IT sohasidagi bilimlarni ulashish, o'rganish va rivojlanish uchun yaratilgan. Bizning maqsadimiz - IT sohasida qiziquvchi va ishlaydigan insonlar uchun foydali ma'lumotlar bazasini yaratish va jamiyat a'zolari o'rtasida bilim almashishni rag'batlantirish.</p>
+                    
+                    <p>Bu platformada siz o'z maqolalaringizni, kitoblaringizni va boshqa foydali kontentlaringizni ulashishingiz, boshqalarning ishlarini o'rganishingiz va IT sohasidagi yangiliklar bilan tanishishingiz mumkin.</p>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features-section">
+                <h2 class="section-title">Sayt Imkoniyatlari</h2>
+                
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                <path d="M18.5 2.5a2.12 2.12 0 0 1 3 3L12 15l-4 1 1-4Z"></path>
+                            </svg>
+                        </div>
+                        <h3>Maqolalar Yozish</h3>
+                        <p>Siz o'z maqolalaringizni yozib, platformada ulashishingiz mumkin. Maqolalar turli mavzularda bo'lishi mumkin: dasturlash tillari, web dasturlash, mobil ilovalar yaratish, sun'iy intellekt va boshqalar.</p>
+                    </div>
+                    
+                    <!-- Feature 2 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+                                <path d="M8 7h6"></path>
+                                <path d="M8 11h8"></path>
+                                <path d="M8 15h6"></path>
+                            </svg>
+                        </div>
+                        <h3>Kitoblar Haqida Ma'lumot</h3>
+                        <p>O'zingiz yozgan yoki o'qigan foydali kitoblar haqida ma'lumot ulashishingiz mumkin. Kitob haqida qisqacha ma'lumot, uning asosiy g'oyalari va nima uchun bu kitobni o'qish kerakligi haqida yozishingiz mumkin.</p>
+                    </div>
+                    
+                    <!-- Feature 3 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12c0 1.2-4 6-9 6s-9-4.8-9-6c0-1.2 4-6 9-6s9 4.8 9 6Z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h3>Kontentlarni Ko'rish</h3>
+                        <p>Platformada mavjud bo'lgan barcha maqolalar, kitoblar va boshqa kontentlarni ko'rishingiz, o'qishingiz va ulardan foydalanishingiz mumkin. Kontentlarni mavzu, muallif yoki sana bo'yicha saralashingiz mumkin.</p>
+                    </div>
+                    
+                    <!-- Feature 4 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 18a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2"></path>
+                                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                <circle cx="12" cy="10" r="2"></circle>
+                                <line x1="8" x2="8" y1="2" y2="4"></line>
+                                <line x1="16" x2="16" y1="2" y2="4"></line>
+                            </svg>
+                        </div>
+                        <h3>Profil Yaratish</h3>
+                        <p>Platformada o'z profilingizni yaratib, shaxsiy ma'lumotlaringizni kiritishingiz, o'z maqolalaringizni boshqarishingiz va boshqa foydalanuvchilar bilan aloqa qilishingiz mumkin.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How to Use Section -->
+            <section class="how-to-use-section">
+                <h2 class="section-title">Platformadan Qanday Foydalanish Mumkin</h2>
+                
+                <div class="steps-container">
+                    <!-- Step 1 -->
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Ro'yxatdan o'ting</h3>
+                            <p>Platformadan to'liq foydalanish uchun ro'yxatdan o'ting. Buning uchun "Log In" tugmasini bosib, keyin "Sign Up" bo'limiga o'ting va kerakli ma'lumotlarni kiriting.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Profilingizni to'ldiring</h3>
+                            <p>Ro'yxatdan o'tgandan so'ng, profilingizni to'ldiring. Ismingiz, kasbingiz, qiziqishlaringiz va boshqa ma'lumotlarni kiriting. Bu boshqa foydalanuvchilarga siz haqingizda ko'proq ma'lumot beradi.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Kontentlarni ko'ring</h3>
+                            <p>Platformada mavjud bo'lgan maqolalar, kitoblar va boshqa kontentlarni ko'ring. Ularni mavzu, muallif yoki sana bo'yicha saralashingiz mumkin.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>O'z kontentingizni ulashing</h3>
+                            <p>O'z maqolalaringiz, kitoblaringiz yoki boshqa foydali kontentlaringizni platformada ulashing. Buning uchun "Maqola qo'shish" yoki "Kitob qo'shish" tugmasini bosing va kerakli ma'lumotlarni kiriting.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Join Us Section -->
+            <section class="join-us-section">
+                <div class="join-us-content">
+                    <h2>Bizga Qo'shiling</h2>
+                    <p>Akmal's Blog platformasiga qo'shilib, IT sohasidagi bilimlaringizni ulashing va yangi bilimlar o'rganing. Platformada ro'yxatdan o'tish bepul va oson.</p>
+                    <div class="join-buttons">
+                        <a href="/login" class="btn btn-primary">Ro'yxatdan o'tish</a>
+                        <a href="/blog" class="btn btn-secondary">Maqolalarni ko'rish</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            © 2025 akmalblog.uz
+        </div>
+    </footer>
+
+    <!-- JavaScript for burger menu and sidebar -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // User sidebar toggle
+            const userAccountBtn = document.getElementById('userAccountBtn');
+            const userSidebar = document.getElementById('userSidebar');
+            const closeSidebar = document.getElementById('closeSidebar');
+            const overlay = document.getElementById('overlay');
+            
+            // Mobile nav toggle
+            const burgerIcon = document.getElementById('burgerIcon');
+            const mobileNav = document.getElementById('mobileNav');
+            const closeMobileNav = document.getElementById('closeMobileNav');
+            
+            // User sidebar toggle
+            userAccountBtn.addEventListener('click', function() {
+                userSidebar.classList.add('active');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+            
+            closeSidebar.addEventListener('click', function() {
+                userSidebar.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+            
+            // Mobile nav toggle
+            burgerIcon.addEventListener('click', function() {
+                burgerIcon.classList.toggle('active');
+                mobileNav.classList.add('active');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+            
+            closeMobileNav.addEventListener('click', function() {
+                burgerIcon.classList.remove('active');
+                mobileNav.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+            
+            // Close sidebar and mobile nav when clicking on overlay
+            overlay.addEventListener('click', function() {
+                userSidebar.classList.remove('active');
+                mobileNav.classList.remove('active');
+                burgerIcon.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+    </script>
+</body>
+</html>
+
